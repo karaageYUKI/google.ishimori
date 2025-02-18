@@ -1,12 +1,5 @@
-version: 1
 services:
   - type: web
-    name: google-karaage
-    env: node
+    name: edu
+    env: docker
     plan: free
-    buildCommand: npm install
-    startCommand: npm start
-    autoDeploy: true
-    envVars:
-      - key: NODE_VERSION
-        value: 16
